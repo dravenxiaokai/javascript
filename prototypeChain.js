@@ -11,3 +11,8 @@ function Dog(){
         console.log('dog bark')
     }
 }
+
+Dog.prototype = new Animal()
+
+//  哈士奇
+var hashiqi = new Dog()
