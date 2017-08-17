@@ -13,5 +13,6 @@ for (i = 0; i < 10; i++) {
             e.preventDefault()
             alert(i)
         })
+        document.body.appendChild(a)
     })(i)
 }
