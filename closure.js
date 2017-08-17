@@ -6,7 +6,7 @@
      var a = 100
      // 返回一个函数 （函数作为返回值）
      return function(){
-         console.log(a)
+         console.log(a) //  自由变量，父作用域找
      }
  }
 
