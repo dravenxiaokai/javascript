@@ -2,12 +2,12 @@
 
 ### [我的微博](http://weibo.com/u/3826537889?refer_flag=1001030201_&is_all=1)
 
-## 基础知识
+## 基础知识 ECMA 262标准
 1. 原型 原型链
 2. 作用域 闭包
 3. 异步 单线程
 
-## JS API
+## JS Web API   W3C标准
 1. DOM操作
 2. Ajax
 3. 时间绑定
