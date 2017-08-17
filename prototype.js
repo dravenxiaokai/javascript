@@ -19,3 +19,41 @@ console.log(fn.__proto__)
 console.log(fn.prototype)
 console.log(obj.__proto__ === Object.prototype)
 
+//  构造函数
+function Foo(name, age) {
+    this.name = name
+}
+Foo.prototype.alertName = function () {
+    console.log(this.name)
+}
+//创建示例
+var f = new Foo('zhangsan')
+f.printName = function () {
+    console.log(this.name)
+}
+// 测试
+f.printName()
+f.alertName()
+f.toString()    //要去f.__prto__.__proto__中查找
+
+var item
+for (item in f) {
+    // 高级浏览器已经在for in 中屏蔽了来自原型的属性
+    // 但是这里建议还是加上这个判断，保证程序的健壮性
+    if (f.hasOwnProperty(item)) {
+        console.log(item)
+    }
+}
+
+/**
+ * instanceof
+ * f instanceof Foo 的判断逻辑是：
+ * f的__proto__一层一层往上，能否对应到Foo.prototype
+ * 再试着判断f instanceof Object
+ */
+
+ //如何准确判断一个变量是数组类型
+ var arr = []
+ console.log(arr instanceof Array)   //true
+ console.log(typeof arr) //object,typeof 是无法判断是否是数组的
+
