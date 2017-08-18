@@ -40,3 +40,19 @@
  <script src="http://baidu.com/api.js"></script>
  //以上将返回 callback({x:100,y:200})
  */
+
+ /**
+  * 服务器端设置 http header
+     另外一个解决跨域的简介方法，需要服务器端来做
+     但是作为交互方，我们必须知道这个方法
+     是将来解决跨域的一个趋势
+
+     // 注意：不同后端语言的写法可能不一样
+     // 第二个参数填写允许跨域的域名称，不建议直接写*
+     response.setHeader('Access-Control-Allow-Origin','http://a.com,http://b.com')
+     response.setHeader('Access-Control-Allow-Headers','X-Requested-Width')
+     response.setHeader('Access-Control-Allow-Methods','PUT,POST,GET,DELETE,OPTIONS')
+
+     // 接受跨域的cookie
+     response.setHeader('Access-Control-Allow-Credentials','true')
+  */
