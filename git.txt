@@ -1,0 +1,15 @@
+git branch
+查看当前分支
+
+git checkout -b dev
+创建dev分支
+git branch
+
+vi a.js
+
+git status
+
+git diff
+查看修改了哪些地方
+
+
