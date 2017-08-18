@@ -12,4 +12,4 @@ git status
 git diff
 查看修改了哪些地方
 
-
+git push origin dev
